@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{url_for('static', filename = 'css/material_01.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename = 'css/animate.css')}}" rel="stylesheet" />
 
-    <title>Digital Learning 2020</title>
+    <title>Tonu Akoranga</title>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Module Selection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Leaderboards</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Feedback</a>
@@ -29,7 +32,7 @@
             </ul>
         </div>
         <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="#">Aviation Security</a>
+            <a class="navbar-brand mx-auto" href="#">Tonu Akoranga</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,11 +52,13 @@
         </div>
     </nav>
 
-    <div class="alert alert-success" role="alert">
+    <div id='welcome_alert' class="alert alert-success" role="alert">
         <strong>Well done!</strong> You just took your first step into a whole new e-learning adventure!
-        <span class='close_icon'><a href="#">X</a></span>
+        <span class='close_icon' id='close_icon'>X</span>
     </div>
-    <div class='wrapper'>
+
+    <div width = '100%' id = 'loader' class="loader"></div>
+    <div id = 'wrapper' class='wrapper'>
         <div class="card">
             <img class="card-img-top" src="https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Card image cap">
             <div class="card-body d-flex flex-column">
@@ -72,7 +77,7 @@
                 <p class="card-text">
                     Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
-                <a href="#!" class="mt-auto btn btn-primary">Go somewhere</a>
+                <a href="#!" class="mt-auto btn btn-primary">Start</a>
                 <p class="font-italic">Last completed on: </p>
             </div>
         </div>
@@ -83,7 +88,7 @@
                 <p class="card-text">
                     Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
-                <a href="#!" class="mt-auto btn btn-primary">Go somewhere</a>
+                <a href="#!" class="mt-auto btn btn-primary">Start</a>
                 <p class="font-italic">Last completed on: </p>
             </div>
         </div>
@@ -95,19 +100,17 @@
                 <p class="card-text">
                     Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
-                <a href="#!" class="mt-auto btn btn-primary">Go somewhere</a>
+                <a href="#!" class="mt-auto btn btn-primary">Start</a>
                 <p class="font-italic">Last completed on: </p>
             </div>
         </div>
 
     </div>
 
-
-    <script src="{{url_for('static', filename = 'js/material_01.js')}}"></script>
     <script src="{{url_for('static', filename = 'js/jquery.min.js')}}"></script>
     <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename = 'js/material_01.js')}}"></script>
 </body>
 
 </html>
