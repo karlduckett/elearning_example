@@ -1,0 +1,24 @@
+    * {
+        box-sizing: 0;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #background_image {
+        object-fit: cover;
+        object-position: -20% 0;
+        height: 90vh;
+        width: 100%;
+    }
+    
+    .content_holder {
+        background-color: rgba(238, 238, 238, 0.404);
+        border-radius: 30px;
+    }
