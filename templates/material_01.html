@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename = 'css/material_01.css')}}" rel="stylesheet" />
+
+    <title>Digital Learning 2020</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Module Selection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Feedback</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">Aviation Security</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">karlduckett</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You just took your first step into a whole new e-learning adventure!
+        <span class='close_icon'><a href="#">X</a></span>
+    </div>
+    <div class='wrapper'>
+        <div class="card">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Keeping Safe Airside</h4>
+                <p class="card-text">
+                    Understand the dangers and risks in the airside environment.
+                </p>
+                <a href="#!" class="mt-auto btn btn-primary">Start</a>
+                <p class="font-italic">Last completed on: </p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1483304528321-0674f0040030?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Unruly Passengers</h4>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+                <a href="#!" class="mt-auto btn btn-primary">Go somewhere</a>
+                <p class="font-italic">Last completed on: </p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1521478413868-1bbd982fa4a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMjZ9&auto=format&fit=crop&w=1500&q=80" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Dangerous Goods</h4>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+                <a href="#!" class="mt-auto btn btn-primary">Go somewhere</a>
+                <p class="font-italic">Last completed on: </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="https://images.unsplash.com/flagged/photo-1552035791-b3cc1632e933?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+                <h4 class="card-title">New Zealand Legislation</h4>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+                <a href="#!" class="mt-auto btn btn-primary">Go somewhere</a>
+                <p class="font-italic">Last completed on: </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="{{url_for('static', filename = 'js/material_01.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
