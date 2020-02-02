@@ -14,46 +14,10 @@
 </head>
 
 <body scroll="no" style="overflow: hidden">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/material_01">Module Selection</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Leaderboards</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Feedback</a>
-                </li>
-            </ul>
-        </div>
-        <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="#">Tonu Akoranga</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">karlduckett</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
+    {% include 'navbar.html' %} {% block narbar %} {% endblock %}
 
     <div width='100%' id='loader' class="loader"></div>
-
     <div id='page_1' class='wrapper fadeInLeft animated'>
         <img id='background_image' src="https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Card image cap">
 
@@ -127,7 +91,7 @@
             <br>
             <br>
             <br>
-            <button type="button" class="btn btn-success">START ASSESSMENT</button>
+            <button type="button" id='start_dg_assessment' class="btn btn-success">START ASSESSMENT</button>
         </div>
 
         <script src="{{url_for('static', filename = 'js/jquery.min.js')}}"></script>

@@ -12,3 +12,7 @@ def material_01():
 @app.route('/dangerous_goods')
 def dangerous_goods():
     return render_template('dangerous_goods.html')
+
+@app.route('/dangerous_goods_assessment')
+def dangerous_goods_assessment():
+    return render_template('dangerous_goods_assessment.html')

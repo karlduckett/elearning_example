@@ -1,9 +1,11 @@
 window.onload = function() {
     document.getElementById("loader").style.display = "none";
 };
+
 window.onbeforeunload = function() {
-    return "Leaving this page will reset the wizard";
-};
+    return "Leaving this page will reset the progress";
+}
+
 
 //START PAGE BTN
 $("#start_btn").click(function() {
@@ -15,6 +17,7 @@ $("#start_btn").click(function() {
 //SIDE BAR BTN
 $('#dg_content_holder_p2').hide()
 $('#dg_content_holder_assessment').hide()
+$("#dg_content_holder_assessment_test").hide()
 
 $('#dg_p1_btn').click(function() {
     $('#dg_content_holder_p1').show()
@@ -53,4 +56,10 @@ $('#dg_p_ass').click(function() {
 
     $('#dg_p_ass').removeClass('list-group-item-light')
     $('#dg_p_ass').addClass('list-group-item-success')
+})
+
+$('#start_dg_assessment').click(function() {
+    $(window).off('beforeunload.windowReload');
+    $(window).unbind('beforeunload');
+    window.location.href = '/dangerous_goods_assessment'
 })
