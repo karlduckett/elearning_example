@@ -3,6 +3,7 @@ cards = []
 $('.card').hide()
 
 window.onload = function() {
+    $('#module_select_btn').addClass('active')
     document.getElementById("loader").style.display = "none";
 
     cards = $('.wrapper').children('.card')
